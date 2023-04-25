@@ -1,0 +1,1 @@
+INSERT INTO WEBUSER.ALUNOS (nome, sobrenome, data_nascimento, endereco, telefone, email, tipo_plano, data_inicio, ativo) VALUES

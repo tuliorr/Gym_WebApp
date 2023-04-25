@@ -1,0 +1,1 @@
+INSERT INTO WEBUSER.AGENDAMENTOS (atividade, aluno) VALUES (1,3);

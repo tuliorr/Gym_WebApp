@@ -1,0 +1,1 @@
+INSERT INTO WEBUSER.ATIVIDADES (nome, instrutor, data, duracao, capacidade, tipo_plano, ativo) VALUES

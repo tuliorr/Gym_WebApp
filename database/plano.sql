@@ -1,0 +1,3 @@
+INSERT INTO WEBUSER.PLANOS (plano) VALUES ('Plano Mensal');
+INSERT INTO WEBUSER.PLANOS (plano) VALUES ('Plano Semestral');
+INSERT INTO WEBUSER.PLANOS (plano) VALUES ('Plano Anual');
