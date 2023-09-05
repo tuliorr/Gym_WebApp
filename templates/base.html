@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='show.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='cards.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script src="https://kit.fontawesome.com/3b9a04f840.js" crossorigin="anonymous"></script>
+    <title>{{title}} || GYM Web App </title>
+</head>
+
+
+<header>
+    <hgroup id="header">
+        <span>GYM App</span>
+    </hgroup>
+    <nav class="navbar">
+        <a id="home" href="/">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Alunos  
+            </button>
+            <div class="dropdown-content">
+                <a href="/alunos">Consultar alunos</a>
+                <a href="/alunos/new">Cadastrar aluno</a>
+                <a href="/alunos/inactive">Desativar aluno</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Atividades  
+            </button>
+            <div class="dropdown-content">
+                <a href="/atividades">Consultar atividades</a>
+                <a href="/atividades/new">Cadastrar atividade</a>
+                <a href="/atividades/inactive">Desativar atividade</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Instrutores  
+            </button>
+            <div class="dropdown-content">
+                <a href="/instrutores">Consultar instrutores</a>
+                <a href="/instrutores/new">Cadastrar instrutor</a>
+            </div>
+        </div>  
+    </nav>
+</header>
+
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+
+<footer class="footer">
+    <p>
+        Obrigado por usar essa web app!
+    </p>
+</footer>
+
+</html>
